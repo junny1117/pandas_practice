@@ -1,0 +1,10 @@
+#위치 기반 인덱싱 사용
+
+import pandas as pd
+df=pd.DataFrame(data = [["홍길동", 80,90,85],
+                        ["이기자", 70,75,85],
+                        ["최신", 100, 90, 95]],
+                        index=[1,2,3], columns=["name", "kor", "eng", "mat"])
+
+print(df[0:1])
+print(df.iloc[0])
